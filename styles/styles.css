@@ -66,33 +66,6 @@
     color: #cf56ff;
 }
 
-/* .secciones {
-    font-family: "oswald";
-    
-} 
-
-.secciones ul {
-    list-style: none; 
-    display: flex;
-    gap: 5vh; 
-
-}
-
-.secciones li a {
-    
-    text-decoration: none;  
-    color: white;
-    font-weight: bold;
-    font-size: 5vh;
-    transition: color 0.3s;
-    
-    
-
-}
-
-.secciones li a:hover{
-    color: #cf56ff;
-}  */
 
 
 
@@ -353,6 +326,13 @@ main h2{
     margin: 2vh;
 }
 
+.preguntas-frecuentes-titulo{
+    font-size: 50px ;
+    text-align: center;
+}
+
+
+
 .form-texto h3{
     color: white;
     font-family: "Josefin Sans" ;
@@ -362,7 +342,7 @@ main h2{
 
 
 main div{
-    margin: 7vh;
+    margin: 2vw;
 }
 
 main div li{
@@ -660,12 +640,12 @@ main div li{
     /* MAIN PREGUNTAS FRECUENTES */
 
     .form-texto{
+        
         margin: 0;
     }
 
     .form-texto h2{
-        display: flex;
-        justify-content: center;
+    
         font-size: 35px;
     }
 
@@ -681,6 +661,13 @@ main div li{
     .form-texto div li{
         font-size: 10px;
     }
+
+    .preguntas-frecuentes {
+    margin: 0;
+    padding: 0;
+    }
+
+    
 
 
     /* WPP FLOTANTE */
