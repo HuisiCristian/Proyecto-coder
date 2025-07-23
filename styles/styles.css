@@ -646,25 +646,28 @@ main div li{
 
     .form-texto h2{
     
-        font-size: 35px;
+        font-size: 45px;
     }
 
     .form-texto div h2{
         
-        font-size: 15px;
+        font-size: 25px;
     }
 
     .form-texto div h3{
-        font-size: 10px;
+        font-size: 20px;
     }
 
     .form-texto div li{
-        font-size: 10px;
+        font-size: 20px;
     }
 
     .preguntas-frecuentes {
+    display: grid;
+    gap: 15px;
     margin: 0;
     padding: 0;
+
     }
 
     
