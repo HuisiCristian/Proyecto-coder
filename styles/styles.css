@@ -582,7 +582,7 @@ main div li{
 
     }
     
-    /* MAIN */
+    /* MAIN INICIO */
 
     .productos-inicio{
         grid-template-columns: repeat(2,1fr);
@@ -594,13 +594,94 @@ main div li{
     }
 
     .item h2{
-        font-size: 25px;
-        padding-top: 10px ;
+        font-size: 15px;
+        padding-top: 15px ;
     }
 
     .item h3{
         font-size: 20px;
     }
+
+    /* WPP FLOTANTE */
+
+    .wpp-container img{
+        width: 13vw;
+        
+    }
+
+    /* MAIN PRODUCTOS */
+
+    .productos-productos{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+
+    .productos-titulo{
+        font-size: 10px;
+    }
+
+    .item-productos h2{
+        font-size: 15px;
+        padding-top: 10px ;
+    }
+
+    .item-productos h3{
+        font-size: 15px;
+    }
+
+    /* WPP FLOTANTE */
+
+    .wpp-container img{
+        width: 13vw;
+        
+    }
+
+    /* MAIN OFERTAS */
+
+    .productos-ofertas{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+
+    .ofertas-titulo{
+        font-size: 10px;
+    }
+
+    .item-ofertas h2{
+        font-size: 15px;
+        padding-top: 10px ;
+    }
+
+    .item-ofertas h3{
+        font-size: 15px;
+    }
+
+
+    /* MAIN PREGUNTAS FRECUENTES */
+
+    .form-texto{
+        margin: 0;
+    }
+
+    .form-texto h2{
+        display: flex;
+        justify-content: center;
+        font-size: 35px;
+    }
+
+    .form-texto div h2{
+        
+        font-size: 15px;
+    }
+
+    .form-texto div h3{
+        font-size: 10px;
+    }
+
+    .form-texto div li{
+        font-size: 10px;
+    }
+
 
     /* WPP FLOTANTE */
 
