@@ -521,6 +521,10 @@ main div li{
 
 @media (max-width:425px){
 
+    body {
+    background-attachment: scroll; 
+    }
+
     /* HEADER */
 
 
