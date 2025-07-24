@@ -564,6 +564,7 @@ main div li{
     
     /* MAIN INICIO */
 
+
     .productos-inicio{
         grid-template-columns: repeat(2,1fr);
         
@@ -582,12 +583,7 @@ main div li{
         font-size: 20px;
     }
 
-    /* WPP FLOTANTE */
-
-    .wpp-container img{
-        width: 13vw;
-        
-    }
+    
 
     /* MAIN PRODUCTOS */
 
@@ -597,7 +593,8 @@ main div li{
     }
 
     .productos-titulo{
-        font-size: 10px;
+        margin-bottom: 50px;
+        font-size: 22px;
     }
 
     .item-productos h2{
@@ -609,12 +606,7 @@ main div li{
         font-size: 15px;
     }
 
-    /* WPP FLOTANTE */
-
-    .wpp-container img{
-        width: 13vw;
-        
-    }
+    
 
     /* MAIN OFERTAS */
 
@@ -624,7 +616,8 @@ main div li{
     }
 
     .ofertas-titulo{
-        font-size: 10px;
+        margin-bottom: 50px;
+        font-size: 22px;
     }
 
     .item-ofertas h2{
@@ -671,14 +664,61 @@ main div li{
     }
 
     
+    /* MAIN CONTACTO */
 
+    .form-completo{
+        display: grid;
+        gap: 20px;
+    }
 
+    .formulario{
+        display: grid;
+        gap: 20px;
+    }
+
+    .formulario div{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .formulario input{
+        margin: 0 40px 0 40px;
+    }
+
+    .formulario textarea {
+        width: auto;
+        height: 100px;
+        margin: 0 40px 0 40px;
+    }
+
+    .checkbox-opcion input{
+        margin: 5px;
+        
+    }
+
+    .enviar-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .enviar-buttom {
+        font-size: 20px;
+        width: 100px;       
+        height: 40px;    
+        
+
+    }
     /* WPP FLOTANTE */
 
     .wpp-container img{
         width: 13vw;
         
     }
+
+
+
 
     /* FOOTER */
 
@@ -732,7 +772,7 @@ main div li{
     }
     
 
-    /* contacto */
+    
 
     
     
