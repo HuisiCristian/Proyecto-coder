@@ -669,6 +669,7 @@ main div li{
     .form-completo{
         display: grid;
         gap: 20px;
+        margin: 10px;
     }
 
     .formulario{
