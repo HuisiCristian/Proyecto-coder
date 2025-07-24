@@ -688,13 +688,16 @@ main div li{
     }
 
     .formulario input{
-        margin: 0 40px 0 40px;
+        margin: 0 5vw;
+        width: 90%;
+        max-width: 100%;
     }
 
     .formulario textarea {
-        width: auto;
-        height: 100px;
-        margin: 0 40px 0 40px;
+        margin: 0 5vw;
+        height: 15vh;
+        width: 90%;
+        max-width: 100%;
     }
 
     .checkbox-opcion input{
