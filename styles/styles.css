@@ -685,6 +685,8 @@ main div li{
         display: flex;
         justify-content: center;
         margin: 0;
+        overflow: hidden;
+        width: 100%;
     }
 
     .imagen-row{
