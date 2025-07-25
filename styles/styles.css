@@ -53,7 +53,6 @@
 /* Nav */
 
 
-
 .nav-link{
     
     font-size: 2vw;
@@ -66,7 +65,11 @@
     color: #cf56ff;
 }
 
-
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}   
 
 
 /* Buscador */
@@ -95,6 +98,8 @@
     border-color: #cf56ff;
     
 }
+
+
 
 
 /* Main */
@@ -543,6 +548,22 @@ main div li{
     /* HEADER */
 
 
+    .container-fluid{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } 
+
+
+    
+    #navbarMenu {
+        flex-direction: column;
+        align-items: center;
+    
+    } 
+
+    /* LOGO */
+
     .logo{
 
         height: auto;
@@ -556,7 +577,7 @@ main div li{
     }
 
     .form-control{
-    width: 15vw;
+    width: 50vw;
     height: auto;
 
     }
@@ -569,17 +590,14 @@ main div li{
 
     /* Buscador */
 
-    .d-flex{
+    .buscador-mobile {
         display: flex;
-        justify-content: end;
-
-    }
-
-    .form-control{
-        padding: 0;
+        justify-content: center;
         
+        
+    } 
 
-    }
+    
     
     /* MAIN INICIO */
 
