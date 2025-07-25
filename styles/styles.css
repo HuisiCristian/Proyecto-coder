@@ -689,13 +689,23 @@ main div li{
         width: 100%;
     }
 
-    /* .imagen-row{
-        padding: 20px 0; 
-        flex-direction: column; 
-        align-items: center;
-        width: 100%;
-        overflow: hidden;
-    } */
+    .imagen-row{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap; 
+        max-width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    } 
+
+    .imagen-row img {
+        max-width: 100%;  /* que no sobrepase el contenedor */
+        height: auto;     /* altura automática para mantener proporción */
+        max-height: 50vh; /* opcional: limitar altura para que no sean tan altas */
+        object-fit: contain; /* para que no se deformen */
+        border-radius: 6px;
+    }
 
     .producto h2{
         font-size: 30px;
@@ -707,9 +717,8 @@ main div li{
 
     .titulo-inicio{
         text-align: center;
-        margin-bottom: 20px;
-        font-size: 50px;
-        margin-left: 30px;
+        font-size: 40px;
+        
     }
     
     
