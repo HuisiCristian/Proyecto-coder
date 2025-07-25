@@ -145,6 +145,54 @@ main h1{
 
 /* Productos inicio */
 
+/* CAROUSEL */
+
+
+.carousel {
+    position: relative;
+    
+}
+
+.carousel-inner{
+    bottom: 50px;
+}
+
+.imagen-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.imagen-row img {
+    height: 75vh; 
+    width: auto;  
+    object-fit: contain;
+    border-radius: 6px; 
+}
+
+/* CONTROLES CAROUSEL */
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+}
+
+.carousel-control-prev {
+    left: 10px; 
+}
+
+.carousel-control-next {
+    right: 10px; 
+}
+
+
+/* PRODCUTOS INICIO */
+
 .productos-inicio{
     display: grid;
     grid-template-columns: repeat(3,1fr);
