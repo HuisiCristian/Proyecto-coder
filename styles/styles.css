@@ -69,7 +69,9 @@
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    gap: 10px;
 }   
+
 
 
 /* Buscador */
@@ -597,6 +599,11 @@ main div li{
         
     } 
 
+    .navbar-nav{
+        display: flex;
+        gap: 5px;
+    }
+    
     
     
     /* MAIN INICIO */
@@ -674,20 +681,17 @@ main div li{
         margin: 0;
     }
 
-    .form-texto h2{
-    
-        font-size: 45px;
+    .preguntas-frecuentes-titulo {
+        font-size: 40px;
     }
 
-    .form-texto div h2{
-        
-        font-size: 25px;
-    }
-
-    .form-texto div h3{
+    .preguntas-frecuentes h2 {
         font-size: 20px;
     }
 
+    .preguntas-frecuentes h3{
+        font-size: 20px;
+    }
     .form-texto div li{
         font-size: 20px;
     }
