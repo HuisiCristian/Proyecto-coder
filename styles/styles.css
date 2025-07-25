@@ -140,17 +140,19 @@ main h1{
     color: #cf56ff;
     text-align: center;
     font-family: "Oswald";
-    font-size: 10vh;
+    font-size: 4vw;
+    
 }
 
 /* Productos inicio */
 
-/* CAROUSEL */
+/* CAROUSEL DESKTOP */
+
 
 
 .carousel {
     position: relative;
-    
+    margin-right: 100px
 }
 
 .carousel-inner{
@@ -160,10 +162,41 @@ main h1{
 .imagen-row {
     display: flex;
     justify-content: center;
-    gap: 10px; 
+    gap: 10px;
 }
 
+/* Desactivo el CAROUSEL MOBILE */
+
+#carousel-mobile{
+    display: none;
+}
+
+/* NOMBRE Y PRECIO PRODUCTO */
+
+.producto{
+    margin: 0;
+}
+
+.producto h2{
+    margin: 3px;
+    font-size: 15px;
+    text-align: center;
+
+}
+.producto h3{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    margin: 2px;
+    
+}
+
+/* IMAGENES */
+
+
 .imagen-row img {
+    display: flex;
+    justify-content: space-around;
     height: 75vh; 
     width: auto;  
     object-fit: contain;
@@ -190,42 +223,6 @@ main h1{
     right: 10px; 
 }
 
-
-/* PRODCUTOS INICIO */
-
-.productos-inicio{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 5px;
-    padding: 0;
-    
-}
-
-.item{
-    text-align: center;
-    margin: 0;
-    margin-bottom: 50px;
-    padding: 0;
-    max-width: 100%;
-}
-
-.item img{
-    width: 100%;
-    height: auto;
-    margin: 0px;
-}
-
-.item h2{
-    color: #cf56ff;
-    font-size: 4vh;
-    margin: 0;
-}
-
-.item h3{
-    font-size: 3vh;
-    margin: 10px;
-    color: white;
-}
 
 /* Productos */
 
@@ -676,28 +673,36 @@ main div li{
     }
 
     
+    /* desactivo el CAROUSEL DESKTOP */
 
-    /* MAIN PRODUCTOS */
-
-    .productos-productos{
-        grid-template-columns: repeat(2,1fr);
-        
+    #carousel-desktop{
+        display: none;
     }
 
-    .productos-titulo{
-        margin-bottom: 50px;
-        font-size: 22px;
+    /* activo el CAROUSEL MOBILE*/
+
+    #carousel-mobile{
+        display: flex;
+        justify-content: center;
+        margin: 0;
     }
 
-    .item-productos h2{
-        font-size: 15px;
-        padding-top: 10px ;
+    .imagen-row{
+        padding: 40px;
     }
 
-    .item-productos h3{
-        font-size: 15px;
+    .producto h2{
+        font-size: 30px;
     }
 
+    .producto h3{
+        font-size: 25px;
+    }
+
+    .titulo-inicio{
+        font-size: 50px;
+    }
+    
     
 
     /* MAIN OFERTAS */
