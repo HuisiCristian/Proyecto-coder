@@ -689,7 +689,7 @@ main div li{
         width: 100%;
     }
 
-    .imagen-row{
+    /* .imagen-row{
         display: flex;
         justify-content: center;
         gap: 10px;
@@ -697,15 +697,15 @@ main div li{
         max-width: 100%;
         overflow-x: hidden;
         box-sizing: border-box;
-    } 
+    }  */
 
-    .imagen-row img {
-        max-width: 100%;  /* que no sobrepase el contenedor */
-        height: auto;     /* altura automática para mantener proporción */
-        max-height: 50vh; /* opcional: limitar altura para que no sean tan altas */
-        object-fit: contain; /* para que no se deformen */
+    /* .imagen-row img {
+        max-width: 100%;  
+        height: auto;     
+        max-height: 50vh; 
+        object-fit: contain;
         border-radius: 6px;
-    }
+    } */
 
     .producto h2{
         font-size: 30px;
