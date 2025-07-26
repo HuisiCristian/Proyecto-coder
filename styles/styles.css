@@ -696,9 +696,13 @@ main div li{
         margin: 10px;
     }
 
+    .carousel-item{
+        margin: 0;
+    }
 
 
     .imagen-row{
+        margin: 0;
         padding-top: 10px;
     }
 
