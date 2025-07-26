@@ -152,12 +152,10 @@ main h1{
 
 .carousel {
     position: relative;
-    /* margin-right: 100px */
+    
 }
 
-/* .carousel-inner{
-    bottom: 50px;
-} */
+
 
 .imagen-row {
     display: flex;
