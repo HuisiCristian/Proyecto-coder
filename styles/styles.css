@@ -665,7 +665,8 @@ main div li{
     }
 
     .titulo-inicio{
-        margin-bottom: 30px;
+        text-align: center;
+        margin: 0;
         font-size: 50px;
     }
 
@@ -708,9 +709,8 @@ main div li{
 
 
     .imagen-row{
-        margin: 20px;
-        padding-top: 20px;
-
+        margin: 0;
+        
     }
 
     .producto{
