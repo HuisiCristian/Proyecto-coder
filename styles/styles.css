@@ -654,8 +654,10 @@ main div li{
     /* MAIN INICIO */
 
     main {
-    max-width: 100vw; 
-    overflow-x: hidden; 
+        max-width: 100vw; 
+        overflow-x: hidden; 
+
+    margin: 10px;
     }
 
 
