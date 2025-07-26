@@ -660,6 +660,7 @@ main div li{
     }
 
     .titulo-inicio{
+        margin-bottom: 30px;
         font-size: 50px;
     }
 
@@ -685,27 +686,25 @@ main div li{
         display: flex;
         flex-direction: column;
         align-items: center;
-        overflow-x: hidden;
-        width: 100%;
+        justify-content: center;
+        margin: 10px;
+        
+        
     }
 
-    /* .imagen-row{
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: wrap; 
-        max-width: 100%;
-        overflow-x: hidden;
-        box-sizing: border-box;
-    }  */
+    .carousel-inner{
+        margin: 10px;
+    }
 
-    /* .imagen-row img {
-        max-width: 100%;  
-        height: auto;     
-        max-height: 50vh; 
-        object-fit: contain;
-        border-radius: 6px;
-    } */
+    .carousel-item{
+        
+    }
+
+    .imagen-row{
+        padding-top: 10px;
+    }
+
+
 
     .producto h2{
         font-size: 30px;
