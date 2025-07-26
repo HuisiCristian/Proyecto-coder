@@ -654,15 +654,10 @@ main div li{
     main {
         max-width: 100vw; 
         overflow-x: hidden; 
-
-    margin: 10px;
+        margin: 10px;
     }
 
 
-    .productos-inicio{
-        grid-template-columns: repeat(2,1fr);
-        
-    }
 
     .titulo-inicio{
         text-align: center;
@@ -718,6 +713,7 @@ main div li{
         height: auto;
     }
 
+    /* TITULOS PRODUCTOS */
 
     .producto h2{
         font-size: 30px;
