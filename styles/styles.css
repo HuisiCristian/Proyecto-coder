@@ -258,7 +258,7 @@ main h1{
     width: 100%;
     height: auto;
     margin: 0px;
-    
+    border-radius: 5px;
 }
 
 .item-productos h2{
@@ -272,6 +272,16 @@ main h1{
     margin: 10px;
     color: white;
 
+}
+
+/* VER MAS BOTON */
+
+.boton-ver-mas{
+    display: flex;
+    justify-content: center;
+    color: #a09f9fb9;
+
+    
 }
 
 /* Ofertas */
@@ -757,17 +767,6 @@ main div li{
     .item-productos h3{
         margin:0;
         font-size: 4vw;
-    }
-
-
-    /* VER MAS BOTON */
-
-    .boton-ver-mas{
-        display: flex;
-        justify-content: center;
-        color: #a09f9fb9;
-
-        
     }
     
     
