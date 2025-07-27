@@ -743,12 +743,20 @@ main div li{
         
     }
 
+    .item-productos{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        
+    }
+
     .item-productos h2{
-        font-size: 20px;
+        font-size: 3vw;
     }
 
     .item-productos h3{
-        font-size: 15px;
+        margin:0;
+        font-size: 3vw;
     }
 
 
