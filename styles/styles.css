@@ -743,6 +743,15 @@ main div li{
         
     }
 
+    .item-productos h2{
+        font-size: 20px;
+    }
+
+    .item-productos h3{
+        font-size: 15px;
+    }
+
+
     /* VER MAS BOTON */
 
     .boton-ver-mas{
@@ -752,8 +761,6 @@ main div li{
 
         
     }
-
-    
     
     
     
