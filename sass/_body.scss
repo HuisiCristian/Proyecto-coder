@@ -1,0 +1,18 @@
+
+
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* header - main - footer */
+    min-height: 100vh;
+    gap: 10px;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    
+    background-image: url("https://images.unsplash.com/photo-1550684376-efcbd6e3f031?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

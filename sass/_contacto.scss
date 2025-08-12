@@ -1,0 +1,73 @@
+@use "variables" as v;
+
+
+main{
+
+    .form-completo{
+        display: grid;
+        justify-content: center;
+        margin:0;
+
+        .form-contenedor {
+            
+            width: 500px;
+            background-color: v.$colorBackgroundItems;
+            border-radius: 10px;
+
+            .titulo-form{
+                color: v.$colorPrincipal;
+                font-size: 10vh;
+                text-align: center;
+            }
+
+            .formulario{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                margin: 20px;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    color: v.$colorPrincipal;
+                    font-family: v.$fuentePF;
+                    text-align: center;
+                    font-size: 3vh;
+                    
+                }
+
+                .checkbox-container{
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px;
+                }
+                
+            }
+
+
+        }
+
+    }
+
+    @include v.mobile{
+
+        .form-completo{
+
+            .form-contenedor{
+                width: 90vw;
+                height: auto;
+                padding: 30px;
+
+                .titulo-form{
+                    font-size: 15vw;
+                }
+
+            }
+        }
+
+
+
+    }
+
+
+}

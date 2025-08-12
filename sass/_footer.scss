@@ -1,0 +1,198 @@
+@use "variables" as v;
+
+
+footer{
+
+
+    width: 100%;
+    height: auto;  
+    background-color: #a09f9fb9; 
+
+
+    .redes-sociales{
+
+        h2{
+            color: #212529;
+            text-align: center;
+            font-family:v.$fuenteFooter ;
+            font-size: 5vh ;
+            padding: 10px;
+        }
+
+        .iconos-footer{
+
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+
+            .icono-ig{
+                    width: 5vh;
+                    height: auto;
+                    border-radius: 10px;
+            }
+
+            .facebook {
+                    width: 5vh;
+                    height: auto;
+                    border-radius: 10px;
+            }
+
+            .wpp {
+    
+                    width: 5vh;
+                    height: auto;
+                    border-radius: 10px;
+            }
+
+        }
+
+    }
+
+    .medios-contacto{
+        display: flex;
+        justify-content: space-around;
+        
+
+
+        .medios-footer{
+
+            display: flex;
+            gap: 80px;               
+            align-items: flex-start; 
+            padding: 30px;
+
+            .bloque{
+
+                display: flex;
+                flex-direction: column; 
+                align-items: center;    
+                text-align: center;
+
+                h2{
+                    font-family: v.$fuenteFooter;
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+
+                .pago{
+                    width: 200px;
+                    height: auto;
+                }
+
+                .envio{
+                    width: 50px;
+                    height: 35px;
+
+                }
+            }
+        }
+    
+        .contacto-footer{
+            margin-right: 50px;
+            margin-top: 30px;
+
+            h2{
+                font-family: v.$fuenteFooter;
+                font-size: 30px;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            p{
+                font-family: v.$fuenteFooter;
+                font-size: 20px;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+        }
+    }
+
+
+    .derechos{
+
+        text-align: center;
+        color: black ;
+        font-size: 15px;
+        bottom: 0;
+        font-family: v.$fuenteFooter ;
+    }
+
+    hr{
+
+    border-color: #000000;
+    margin: 15px 0;
+
+    }
+
+    @include v.mobile{
+
+        .redes-sociales h2{
+            font-size: 20px ;   
+            
+            .iconos-footer{
+
+                .icono-ig{
+                    height: auto;
+                    width: 10vw;
+                }
+
+                .facebook{
+                    height: auto;
+                    width: 10vw;
+                }
+
+                .wpp{
+                    height: auto;
+                    width: 10vw;
+                }
+            }
+
+        }
+
+        .medios-contacto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .medios-footer{
+
+                display: flex;
+                justify-content: center;
+
+                .bloque{
+
+                    h2{
+                        font-size: 15px;
+                    }
+
+                    .pago{
+                        width: 40vw;
+                        height: auto;
+                    }
+
+                    .envio{
+                        width: 10vw;    
+                        height: auto;
+                    }
+
+                }
+            }
+            
+            .contacto-footer {
+                text-align: center;
+                margin: 0;
+                
+            }
+                
+                
+
+
+            
+        }
+
+        }
+
+
+}

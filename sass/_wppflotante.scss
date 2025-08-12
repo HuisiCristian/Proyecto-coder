@@ -1,0 +1,33 @@
+@use "variables" as v;
+
+.wpp-container{
+
+        position: sticky;
+        bottom: 2vh;
+        display: flex;
+        justify-content: flex-end;
+
+        .wpp-flotante{
+            display: flex;
+            justify-items: flex-end;
+            width: fit-content;
+        }
+
+            .wpp-flotante-img{
+                margin-right: 5px;
+                width: 4vw;
+                height: auto;
+                border-radius: 10vh;
+            }
+
+    
+}
+
+@include v.mobile{
+    .wpp-container{
+        .wpp-flotante-img{
+            width: 13vw;
+            margin-right: 5px;
+        }
+    }
+}

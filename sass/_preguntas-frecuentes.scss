@@ -1,0 +1,80 @@
+@use "variables" as v;
+
+main{
+
+    .form-texto{
+
+        .preguntas-frecuentes-titulo{
+            color: v.$colorPrincipal;
+            font-family: v.$fuentePF;
+            font-size: 4vw;
+            margin: 2vh;
+            text-align: center;
+        }
+
+        .preguntas-frecuentes{
+            
+            h2{
+                color: v.$colorPrincipal;
+                font-family: v.$fuentePF;
+                font-size: 5vh;
+                margin: 2vh;
+            }
+
+            h3{
+                color: v.$colorSecundario;
+                font-family: v.$fuenteFooter ;
+                font-size: 3vh;
+                margin: 3vh;
+            }
+
+            ul{
+                    li{
+                        color: v.$colorSecundario;
+                        font-family: v.$fuenteFooter ;
+                        font-size: 3vh;
+                        margin: 3vh;
+                    }
+                }
+
+        }
+
+
+
+
+    }
+
+    @include v.mobile{
+
+        .form-texto{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .preguntas-frecuentes-titulo{
+                font-size: 40px;
+            }
+
+            .preguntas-frecuentes{
+                background-color: v.$colorBackgroundHeader;
+                border-radius: 5px;
+                h2{
+                    
+
+                    font-size: 20px;
+                }
+
+                h3{
+                    
+                    font-size: 20px;
+                }
+
+                ul{
+                    li{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

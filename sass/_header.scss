@@ -1,0 +1,163 @@
+@use "variables" as v;
+
+header{
+    
+    position: sticky;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    background-color: v.$colorBackgroundHeader;
+    z-index: 2000;
+    
+
+    .navbar{
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        padding:0 ;
+        margin: 0;
+
+
+        .container-fluid{ 
+            
+            
+            
+            /* Logo*/ 
+
+            .logo{
+                width: 5vw;
+                height: auto;
+            }
+
+            /* Menu hamburguesa */
+
+            .navbar-toggler{
+
+                background-color: #ffffffe7;
+
+                .navbar-toggler-icon{
+                    width: 30px;  
+                    height: 40px;
+                }
+
+            }
+
+            .collapse{
+
+                
+                
+                .navbar-nav{
+
+                    display: flex;
+                    gap: 10px;
+                    margin: 0 auto; 
+                    padding: 0;
+                    list-style: none;
+
+                    .nav-item{
+
+                        .nav-link{
+                            font-size: 2vw;
+                            font-weight: bold;
+                            color: white;
+                        }
+                        .nav-link:hover{
+                            color: #cf56ff;
+                        }
+
+                    }
+
+                }
+
+                /* Buscador */
+
+                
+                .buscador-mobile{
+
+                    
+                    .form-control{
+                        width: 15vw;
+                        height: auto;
+                    }
+
+                    .form-control:focus{
+                        outline: none;
+                        box-shadow: 0 0 5px 2px v.$colorPrincipal ;
+                        border-color: v.$colorPrincipal;
+                        
+                    }
+                    
+                    .btn-outline-success{
+                        background-color: #cf56ff31;
+                        color: white;
+                        border-color: v.$colorPrincipal;
+    
+                    }
+
+                    .btn-outline-success:hover{
+                        background-color: v.$colorPrincipal;
+                        border-color:v.$colorPrincipal ;
+                        box-shadow: 0 0 10px 2px v.$colorPrincipal
+                    }
+
+                }
+
+            }
+
+
+        }
+    }
+
+    @include v.mobile{
+
+        .container-fluid{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .navbar-brand {
+
+                .logo{
+                    height: auto;
+                    width: 15vw;
+
+                }
+            }
+
+            #navbarMenu {
+                flex-direction: column;
+                align-items: center;
+
+                .navbar-nav{
+                    display: flex;
+                    gap: 5px;
+
+                    .nav-item{
+
+                        .nav-link{
+                            font-size: 6vw;
+                        }
+                    }
+
+                }
+
+
+                .buscador-mobile {
+                    display: flex;
+                    justify-content: center;
+                    
+                    
+                    .form-control{
+                        width: 50vw;
+                        height: auto;
+    
+                    }
+                }
+            } 
+            
+
+
+        }
+    }
+}

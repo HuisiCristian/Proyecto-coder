@@ -1,0 +1,97 @@
+@use "variables" as v;
+
+main{
+
+    margin: 10px;
+    
+    .productos-titulo {
+
+        color: v.$colorPrincipal;
+        text-align: center;
+        font-family: v.$fuentePF;
+        font-size: 3vh;
+    }   
+
+
+    .productos-productos{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:5px;
+        margin:0 0 15px 0 ;
+
+        .item-productos{
+            text-align: center;
+            padding: 0;
+            margin:0 0 15px 0;
+            max-width: 100%;
+            background-color: v.$colorBackgroundItems;
+            border-radius: 5px;
+
+                img{
+                    width: 100%;
+                    height: auto;
+                    margin: 0px;
+                    font-family: v.$fuente;
+                }
+                
+                
+
+                h2{
+                    color: v.$colorNombreProducto;
+                    font-size: 4vh;
+                    margin: 0;
+                }
+
+                h3{
+                    font-size: 3vh;
+                    margin: 10px;
+                    color: v.$colorPrecioProducto;
+
+                }
+
+        }
+
+    }
+
+    @include v.mobile{
+
+        .productos-titulo{
+            font-size: 4vw;
+            margin-bottom: 20px;
+        }
+
+        .productos-productos{
+
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            justify-content: center;
+
+            .item-productos{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                h2{
+                    font-size: 4vw;
+                }
+
+                h3{
+                    font-size: 4vw;
+                    margin: 5px;
+                }
+            }
+
+
+        }
+
+        .boton-ver-mas{
+            .btn{
+                width: 20vw;
+                height: auto;
+            }
+        }
+
+
+    }
+
+}

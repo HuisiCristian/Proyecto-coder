@@ -1,0 +1,117 @@
+@use "variables" as v;
+
+main{
+
+    margin: 10px;
+
+    .ofertas-titulo{
+        color: v.$colorPrincipal;
+        text-align: center;
+        font-family: v.$fuentePF;
+        font-size: 3vh;
+        
+    }
+
+
+    .productos-ofertas{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:5px;
+        margin:0 0 15px 0 ;
+
+        .item-ofertas{
+            text-align: center;
+            padding: 0;
+            margin:0 0 15px 0;
+            max-width: 100%;
+            background-color: v.$colorBackgroundItems;
+            border-radius: 5px;
+
+            img{
+                width: 100%;
+                height: auto;
+                margin: 0px;
+            }
+
+            h2{
+                color: v.$colorPrincipal;
+                font-size: 4vh;
+                margin: 0;
+                font-family: v.$fuente;
+            }
+
+            .descuento{
+                display: flex; 
+                text-align: center;
+                justify-content: center;
+                margin: 0;
+                
+                h3{
+                    font-size: 3vh;
+                    margin: 10px;
+                }
+
+                .precio-actual{
+                    color: v.$colorPrecioProducto;
+                }
+
+                .precio-anterior{
+                    text-decoration: line-through;
+                    color: v.$colorDescuento;
+                    
+                }
+
+
+            }
+        
+
+        }
+
+
+
+    }
+
+    @include v.mobile{
+
+        .ofertas-titulo{
+            margin-bottom: 50px;
+            font-size: 22px;
+        }
+
+
+        .productos-ofertas{
+            grid-template-columns: repeat(2,1fr);
+
+            .item-ofertas{
+
+                h2{
+                    font-size: 15px;
+                    padding-top: 10px ;
+                }
+
+                .descuento{
+
+                    .precio-actual{
+                        font-size: 15px;
+                    }
+
+                    .precio-anterior{
+                        font-size: 15px;
+                    }
+
+                }
+            }
+        
+        }
+
+        .boton-ver-mas{
+            .btn{
+                width: 20vw;
+                height: auto;
+            }
+        }
+
+    }
+
+
+}

@@ -1,0 +1,140 @@
+@use "variables" as v;
+
+
+
+main{
+
+    .titulo-inicio{
+        color: #cf56ff;
+        text-align: center;
+        font-family: "Oswald";
+        font-size: 4vw;
+    }
+
+    #carousel-mobile{
+        display: none;
+    }
+
+    #carousel-desktop{
+
+        position: relative ;
+
+        .carousel-inner{
+
+            .carousel-item{
+
+                .imagen-row{
+
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px;
+
+                    .producto{
+                        margin: 0;
+                    }
+                    
+                    .producto h2{
+                        margin: 3px;
+                        font-size: 15px;
+                        text-align: center;
+                        color: v.$colorNombreProducto;
+                    }
+
+                    .producto h3{
+                        font-size: 15px;
+                        text-align: center;
+                        color: v.$colorPrecioProducto;
+                        margin: 2px;
+                    }
+
+                    .d-block{
+                        display: flex;
+                        justify-content: space-around;
+                        height: 75vh; 
+                        width: auto;  
+                        object-fit: contain;
+                        border-radius: 6px; 
+                    }
+                }
+            
+            }
+
+        }
+    }
+
+
+    @include v.mobile{
+
+        
+
+            max-width: 100vw; 
+            overflow-x: hidden;
+
+            .titulo-inicio{
+                text-align: center;
+                font-size: 40px;
+                
+            }
+            
+            #carousel-desktop{
+                display: none;
+            }
+            
+            
+            #carousel-mobile{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin: 15px;
+                
+                
+
+                .carousel-inner{
+                    display: flex;
+                    // flex-direction: row;
+                    margin: 10px;
+                    
+
+                    .carousel-item{
+                        width: 100%;
+                        height: 100%;
+                        margin: 0;
+
+                        .imagen-row{
+                            
+                            margin: 0;
+
+                            .producto{
+                                
+                                text-align: center;
+                                
+                                img{
+                                    
+                                    height: 75vh; 
+                                    width: auto;
+                                    object-fit: contain;
+                                    border-radius: 6px;
+                                }
+
+                                h2{
+                                    
+                                    color: v.$colorNombreProducto;
+                                    font-size: 30px;
+                                }
+
+                                h3{
+                                    
+                                    color: v.$colorPrecioProducto;
+                                    font-size: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    
+}
+
