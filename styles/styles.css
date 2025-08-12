@@ -399,6 +399,11 @@ main .productos-ofertas .item-ofertas .descuento .precio-anterior {
   main .productos-ofertas {
     grid-template-columns: repeat(2, 1fr);
   }
+  main .productos-ofertas .item-ofertas img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
   main .productos-ofertas .item-ofertas h2 {
     font-size: 15px;
     padding-top: 10px;

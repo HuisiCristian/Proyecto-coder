@@ -90,6 +90,12 @@ main{
 
             .item-ofertas{
 
+                img{
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                }
+
                 h2{
                     font-size: 15px;
                     padding-top: 10px ;
