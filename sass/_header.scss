@@ -28,6 +28,11 @@ header{
             .logo{
                 width: 5vw;
                 height: auto;
+                transition: transform 0.3s ease;
+            }
+
+            .logo:hover{
+                transform: scale(1.05);
             }
 
             /* Menu hamburguesa */
@@ -61,8 +66,10 @@ header{
                             font-size: 2vw;
                             font-weight: bold;
                             color: white;
+                            transition: transform 0.3s ease;
                         }
                         .nav-link:hover{
+                            transform: scale(1.1);
                             color: #cf56ff;
                         }
 
@@ -92,13 +99,16 @@ header{
                         background-color: #cf56ff31;
                         color: white;
                         border-color: v.$colorPrincipal;
+                        transition: transform 0.3s ease;
     
                     }
 
                     .btn-outline-success:hover{
                         background-color: v.$colorPrincipal;
                         border-color:v.$colorPrincipal ;
-                        box-shadow: 0 0 10px 2px v.$colorPrincipal
+                        box-shadow: 0 0 10px 2px v.$colorPrincipal;
+                        transform: scale(1.1);
+                        
                     }
 
                 }

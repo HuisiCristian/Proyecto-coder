@@ -26,11 +26,17 @@ main{
             max-width: 100%;
             background-color: v.$colorBackgroundItems;
             border-radius: 5px;
+            transition: transform 0.3 ease;
+
+            &:hover{
+                transform: scale(1.01);
+            }
 
             img{
-                width: 100%;
-                height: auto;
+                width: auto;
+                height: 75vh;
                 margin: 0px;
+                
             }
 
             h2{

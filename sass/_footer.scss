@@ -29,12 +29,22 @@ footer{
                     width: 5vh;
                     height: auto;
                     border-radius: 10px;
+                    transition: transform 0.3s ease;
+
+                    &:hover{
+                        transform: scale(1.1);
+                    }
             }
 
             .facebook {
                     width: 5vh;
                     height: auto;
                     border-radius: 10px;
+                    transition: transform 0.3s ease;
+
+                    &:hover{
+                        transform: scale(1.1);
+                    }
             }
 
             .wpp {
@@ -42,6 +52,11 @@ footer{
                     width: 5vh;
                     height: auto;
                     border-radius: 10px;
+                    transition: transform 0.3s ease;
+
+                    &:hover{
+                        transform: scale(1.1);
+                    }
             }
 
         }

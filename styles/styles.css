@@ -28,6 +28,10 @@ header .navbar .container-fluid {
 header .navbar .container-fluid .logo {
   width: 5vw;
   height: auto;
+  transition: transform 0.3s ease;
+}
+header .navbar .container-fluid .logo:hover {
+  transform: scale(1.05);
 }
 header .navbar .container-fluid .navbar-toggler {
   background-color: rgba(255, 255, 255, 0.9058823529);
@@ -50,8 +54,10 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
   font-size: 2vw;
   font-weight: bold;
   color: white;
+  transition: transform 0.3s ease;
 }
 header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
+  transform: scale(1.1);
   color: #cf56ff;
 }
 header .navbar .container-fluid .collapse .buscador-mobile .form-control {
@@ -67,11 +73,13 @@ header .navbar .container-fluid .collapse .buscador-mobile .btn-outline-success 
   background-color: rgba(207, 86, 255, 0.1921568627);
   color: white;
   border-color: #cf56ff;
+  transition: transform 0.3s ease;
 }
 header .navbar .container-fluid .collapse .buscador-mobile .btn-outline-success:hover {
   background-color: #cf56ff;
   border-color: #cf56ff;
   box-shadow: 0 0 10px 2px #cf56ff;
+  transform: scale(1.1);
 }
 @media (max-width: 430px) {
   header .container-fluid {
@@ -135,12 +143,24 @@ body {
   width: 4vw;
   height: auto;
   border-radius: 10vh;
+  animation: flotar 2s ease-in-out infinite;
+}
+.wpp-container .wpp-flotante-img:hover {
+  animation-play-state: paused;
 }
 
 @media (max-width: 430px) {
   .wpp-container .wpp-flotante-img {
     width: 13vw;
     margin-right: 5px;
+  }
+}
+@keyframes flotar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
   }
 }
 main .titulo-inicio {
@@ -162,6 +182,10 @@ main #carousel-desktop .carousel-inner .carousel-item .imagen-row {
 }
 main #carousel-desktop .carousel-inner .carousel-item .imagen-row .producto {
   margin: 0;
+  transition: transform 0.3 ease;
+}
+main #carousel-desktop .carousel-inner .carousel-item .imagen-row .producto:hover {
+  transform: scale(1.01);
 }
 main #carousel-desktop .carousel-inner .carousel-item .imagen-row .producto h2 {
   margin: 3px;
@@ -255,12 +279,15 @@ main .productos-productos .item-productos {
   max-width: 100%;
   background-color: rgba(255, 255, 255, 0.1450980392);
   border-radius: 5px;
+  transition: transform 0.3 ease;
+}
+main .productos-productos .item-productos:hover {
+  transform: scale(1.01);
 }
 main .productos-productos .item-productos img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 75vh;
   margin: 0px;
-  font-family: Roboto;
 }
 main .productos-productos .item-productos h2 {
   color: #cf56ff;
@@ -271,6 +298,10 @@ main .productos-productos .item-productos h3 {
   font-size: 3vh;
   margin: 10px;
   color: white;
+}
+main .productos-productos .boton-ver-mas button {
+  width: 20vw;
+  height: auto;
 }
 @media (max-width: 430px) {
   main .productos-titulo {
@@ -287,6 +318,11 @@ main .productos-productos .item-productos h3 {
     flex-direction: column;
     gap: 5px;
   }
+  main .productos-productos .item-productos img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
   main .productos-productos .item-productos h2 {
     font-size: 4vw;
   }
@@ -294,7 +330,7 @@ main .productos-productos .item-productos h3 {
     font-size: 4vw;
     margin: 5px;
   }
-  main .boton-ver-mas .btn {
+  main .boton-ver-mas button {
     width: 20vw;
     height: auto;
   }
@@ -322,10 +358,14 @@ main .productos-ofertas .item-ofertas {
   max-width: 100%;
   background-color: rgba(255, 255, 255, 0.1450980392);
   border-radius: 5px;
+  transition: transform 0.3 ease;
+}
+main .productos-ofertas .item-ofertas:hover {
+  transform: scale(1.01);
 }
 main .productos-ofertas .item-ofertas img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 75vh;
   margin: 0px;
 }
 main .productos-ofertas .item-ofertas h2 {
@@ -490,16 +530,28 @@ footer .redes-sociales .iconos-footer .icono-ig {
   width: 5vh;
   height: auto;
   border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+footer .redes-sociales .iconos-footer .icono-ig:hover {
+  transform: scale(1.1);
 }
 footer .redes-sociales .iconos-footer .facebook {
   width: 5vh;
   height: auto;
   border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+footer .redes-sociales .iconos-footer .facebook:hover {
+  transform: scale(1.1);
 }
 footer .redes-sociales .iconos-footer .wpp {
   width: 5vh;
   height: auto;
   border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+footer .redes-sociales .iconos-footer .wpp:hover {
+  transform: scale(1.1);
 }
 footer .medios-contacto {
   display: flex;

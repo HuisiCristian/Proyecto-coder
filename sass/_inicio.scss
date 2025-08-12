@@ -28,9 +28,17 @@ main{
                     display: flex;
                     justify-content: center;
                     gap: 10px;
+                    
 
                     .producto{
                         margin: 0;
+                        transition: transform 0.3 ease;
+
+
+                        &:hover{
+                            transform: scale(1.01);
+                        }
+
                     }
                     
                     .producto h2{
@@ -92,7 +100,6 @@ main{
 
                 .carousel-inner{
                     display: flex;
-                    // flex-direction: row;
                     margin: 10px;
                     
 
