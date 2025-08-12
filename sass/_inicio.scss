@@ -5,9 +5,9 @@
 main{
 
     .titulo-inicio{
-        color: #cf56ff;
+        color: v.$colorPrincipal;
         text-align: center;
-        font-family: "Oswald";
+        font-family: v.$fuentePF;
         font-size: 4vw;
     }
 

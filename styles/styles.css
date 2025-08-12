@@ -146,7 +146,7 @@ body {
 main .titulo-inicio {
   color: #cf56ff;
   text-align: center;
-  font-family: "Oswald";
+  font-family: Oswald;
   font-size: 4vw;
 }
 main #carousel-mobile {
