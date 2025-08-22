@@ -19,6 +19,8 @@ main{
         gap:5px;
         margin:0 0 15px 0 ;
 
+    
+
         .item-ofertas{
             text-align: center;
             padding: 0;
@@ -75,6 +77,10 @@ main{
 
 
 
+    
+
+
+
     }
 
     @include v.mobile{
@@ -87,6 +93,11 @@ main{
 
         .productos-ofertas{
             grid-template-columns: repeat(2,1fr);
+
+            // .item-ofertas-impar{
+            //     display: flex;
+
+            // }
 
             .item-ofertas{
 
