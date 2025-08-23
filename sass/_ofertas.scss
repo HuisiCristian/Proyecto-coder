@@ -28,7 +28,7 @@ main{
             max-width: 100%;
             background-color: v.$colorBackgroundItems;
             border-radius: 5px;
-            transition: transform 0.3 ease;
+            transition: transform 0.3s ease;
 
             &:hover{
                 transform: scale(1.01);
@@ -71,17 +71,14 @@ main{
 
 
             }
-        
 
         }
-
-
-
-    
-
-
-
     }
+
+
+}
+
+
 
     @include v.mobile{
 
@@ -96,6 +93,7 @@ main{
 
 
             .item-ofertas{
+
 
                 img{
                     width: 100%;
@@ -120,6 +118,7 @@ main{
 
                 }
             }
+
         
         }
 
@@ -133,4 +132,3 @@ main{
     }
 
 
-}

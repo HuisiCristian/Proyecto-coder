@@ -21,7 +21,10 @@ header .navbar {
   padding: 0;
   margin: 0;
 }
-
+header .navbar .container-fluid {
+  /* Logo*/
+  /* Menu hamburguesa */
+}
 header .navbar .container-fluid .logo {
   width: 5vw;
   height: auto;
@@ -37,7 +40,6 @@ header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
   width: 30px;
   height: 40px;
 }
-
 header .navbar .container-fluid .collapse .navbar-nav {
   display: flex;
   gap: 10px;
@@ -55,26 +57,41 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover 
   transform: scale(1.1);
   color: #cf56ff;
 }
-header .navbar .container-fluid .collapse .buscador-mobile .form-control {
+header .navbar .container-fluid .collapse .buscador-carrito {
+  display: flex;
+}
+header .navbar .container-fluid .collapse .buscador-carrito .buscador-mobile .form-control {
   width: 15vw;
   height: auto;
 }
-header .navbar .container-fluid .collapse .buscador-mobile .form-control:focus {
+header .navbar .container-fluid .collapse .buscador-carrito .buscador-mobile .form-control:focus {
   outline: none;
   box-shadow: 0 0 5px 2px #cf56ff;
   border-color: #cf56ff;
 }
-header .navbar .container-fluid .collapse .buscador-mobile .btn-outline-success {
+header .navbar .container-fluid .collapse .buscador-carrito .buscador-mobile .btn-outline-success {
   background-color: rgba(207, 86, 255, 0.1921568627);
   color: white;
   border-color: #cf56ff;
   transition: transform 0.3s ease;
 }
-header .navbar .container-fluid .collapse .buscador-mobile .btn-outline-success:hover {
+header .navbar .container-fluid .collapse .buscador-carrito .buscador-mobile .btn-outline-success:hover {
   background-color: #cf56ff;
   border-color: #cf56ff;
   box-shadow: 0 0 10px 2px #cf56ff;
   transform: scale(1.1);
+}
+header .navbar .container-fluid .collapse .buscador-carrito .carrito {
+  margin-left: 20px;
+}
+header .navbar .container-fluid .collapse .buscador-carrito .carrito .fa-solid {
+  color: #cf56ff;
+  font-size: 30px;
+  transition: color 0.3s;
+}
+header .navbar .container-fluid .collapse .buscador-carrito .carrito .fa-solid:hover {
+  transform: scale(1.1);
+  color: #cf56ff;
 }
 @media (max-width: 430px) {
   header .container-fluid {
@@ -97,13 +114,28 @@ header .navbar .container-fluid .collapse .buscador-mobile .btn-outline-success:
   header .container-fluid #navbarMenu .navbar-nav .nav-item .nav-link {
     font-size: 6vw;
   }
-  header .container-fluid #navbarMenu .buscador-mobile {
-    display: flex;
-    justify-content: center;
+  header .container-fluid #navbarMenu .buscador-carrito {
+    margin: 5px;
+    justify-content: end;
+    gap: 5vw;
   }
-  header .container-fluid #navbarMenu .buscador-mobile .form-control {
+  header .container-fluid #navbarMenu .buscador-carrito .buscador-mobile {
+    margin-right: 10px;
+  }
+  header .container-fluid #navbarMenu .buscador-carrito .buscador-mobile .form-control {
     width: 50vw;
     height: auto;
+  }
+  header .container-fluid #navbarMenu .buscador-carrito .buscador-mobile .btn {
+    width: 20vw;
+    height: auto;
+  }
+  header .container-fluid #navbarMenu .buscador-carrito .carrito {
+    width: auto;
+    margin: 0;
+  }
+  header .container-fluid #navbarMenu .buscador-carrito .carrito i {
+    font-size: 40px;
   }
 }
 
@@ -177,7 +209,7 @@ main #carousel-desktop .carousel-inner .carousel-item .imagen-row {
 }
 main #carousel-desktop .carousel-inner .carousel-item .imagen-row .producto {
   margin: 0;
-  transition: transform 0.3s ease;
+  transition: transform 0.3 ease;
 }
 main #carousel-desktop .carousel-inner .carousel-item .imagen-row .producto:hover {
   transform: scale(1.01);
@@ -274,7 +306,7 @@ main .productos-productos .item-productos {
   max-width: 100%;
   background-color: rgba(255, 255, 255, 0.1450980392);
   border-radius: 5px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3 ease;
 }
 main .productos-productos .item-productos:hover {
   transform: scale(1.01);
@@ -386,35 +418,35 @@ main .productos-ofertas .item-ofertas .descuento .precio-anterior {
   text-decoration: line-through;
   color: #ff29e3;
 }
+
 @media (max-width: 430px) {
-  main .ofertas-titulo {
+  .ofertas-titulo {
     margin-bottom: 50px;
     font-size: 22px;
   }
-  main .productos-ofertas {
+  .productos-ofertas {
     grid-template-columns: repeat(2, 1fr);
   }
-  main .productos-ofertas .item-ofertas img {
+  .productos-ofertas .item-ofertas img {
     width: 100%;
     height: auto;
     object-fit: contain;
   }
-  main .productos-ofertas .item-ofertas h2 {
+  .productos-ofertas .item-ofertas h2 {
     font-size: 15px;
     padding-top: 10px;
   }
-  main .productos-ofertas .item-ofertas .descuento .precio-actual {
+  .productos-ofertas .item-ofertas .descuento .precio-actual {
     font-size: 15px;
   }
-  main .productos-ofertas .item-ofertas .descuento .precio-anterior {
+  .productos-ofertas .item-ofertas .descuento .precio-anterior {
     font-size: 15px;
   }
-  main .boton-ver-mas .btn {
+  .boton-ver-mas .btn {
     width: 20vw;
     height: auto;
   }
 }
-
 main .form-texto .preguntas-frecuentes-titulo {
   color: #cf56ff;
   font-family: Oswald;

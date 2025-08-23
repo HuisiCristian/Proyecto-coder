@@ -50,8 +50,7 @@ header{
 
             .collapse{
 
-                
-                
+
                 .navbar-nav{
 
                     display: flex;
@@ -65,59 +64,86 @@ header{
                         .nav-link{
                             font-size: 2vw;
                             font-weight: bold;
-                            color: white;
+                            color: v.$colorSecundario;
                             transition: transform 0.3s ease;
                         }
                         .nav-link:hover{
                             transform: scale(1.1);
-                            color: #cf56ff;
+                            color: v.$colorPrincipal;
                         }
 
                     }
 
                 }
 
-                /* Buscador */
+                .buscador-carrito{
 
-                
-                .buscador-mobile{
+                    display: flex;
 
+
+                    .buscador-mobile{
+    
                     
-                    .form-control{
-                        width: 15vw;
-                        height: auto;
-                    }
-
-                    .form-control:focus{
-                        outline: none;
-                        box-shadow: 0 0 5px 2px v.$colorPrincipal ;
-                        border-color: v.$colorPrincipal;
+                        .form-control{
+                            width: 15vw;
+                            height: auto;
+                        }
+    
+                        .form-control:focus{
+                            outline: none;
+                            box-shadow: 0 0 5px 2px v.$colorPrincipal ;
+                            border-color: v.$colorPrincipal;
+                            
+                        }
+    
                         
-                    }
-                    
-                    .btn-outline-success{
-                        background-color: #cf56ff31;
-                        color: white;
-                        border-color: v.$colorPrincipal;
-                        transition: transform 0.3s ease;
+                        .btn-outline-success{
+                            background-color: #cf56ff31;
+                            color: white;
+                            border-color: v.$colorPrincipal;
+                            transition: transform 0.3s ease;
+        
+                        }
+    
+                        .btn-outline-success:hover{
+                            background-color: v.$colorPrincipal;
+                            border-color:v.$colorPrincipal ;
+                            box-shadow: 0 0 10px 2px v.$colorPrincipal;
+                            transform: scale(1.1);
+                            
+                        }
+    
     
                     }
-
-                    .btn-outline-success:hover{
-                        background-color: v.$colorPrincipal;
-                        border-color:v.$colorPrincipal ;
-                        box-shadow: 0 0 10px 2px v.$colorPrincipal;
-                        transform: scale(1.1);
+    
+                    .carrito{
+                        margin-left: 20px;
                         
+    
+                        .fa-solid{
+                            color: v.$colorPrincipal;
+                            font-size: 30px;
+                            transition: color 0.3s;
+                        }
+    
+                        .fa-solid:hover{
+                            transform: scale(1.1);
+                            color: v.$colorPrincipal;
+                            
+                        }
                     }
-
                 }
+
+                
+
+                
 
             }
 
 
         }
     }
+
 
     @include v.mobile{
 
@@ -152,22 +178,41 @@ header{
 
                 }
 
+                .buscador-carrito{
+                    margin: 5px;
+                    justify-content: end;
+                    gap: 5vw;
 
-                .buscador-mobile {
-                    display: flex;
-                    justify-content: center;
-                    
-                    
-                    .form-control{
-                        width: 50vw;
-                        height: auto;
-    
+                    .buscador-mobile{
+                        
+                        margin-right: 10px;
+
+                        .form-control{
+                            width: 50vw;
+                            height: auto;
+                        }
+
+                        .btn{
+                            width: 20vw;
+                            height: auto;
+                        }
+                    }
+
+                    .carrito{
+                        width: auto;
+                        margin: 0;
+
+                        i{
+                            font-size: 40px;
+                        }
                     }
                 }
-            } 
+                
+            
             
 
 
+            }
         }
     }
 }
