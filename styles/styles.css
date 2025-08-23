@@ -122,16 +122,19 @@ header .navbar .container-fluid .collapse .buscador-carrito .carrito .fa-solid:h
     gap: 5vw;
   }
   header .container-fluid #navbarMenu .buscador-carrito .buscador-mobile {
+    opacity: 1;
     flex-grow: 1;
     margin-right: 10px;
   }
   header .container-fluid #navbarMenu .buscador-carrito .buscador-mobile .form-control {
     width: 50vw;
     height: auto;
+    transition: all 0.3s ease;
   }
   header .container-fluid #navbarMenu .buscador-carrito .buscador-mobile .btn {
     width: 20vw;
     height: auto;
+    transition: all 0.3s ease;
   }
   header .container-fluid #navbarMenu .buscador-carrito .carrito {
     opacity: 1;

@@ -186,17 +186,20 @@ header{
                     gap: 5vw;
 
                     .buscador-mobile{
+                        opacity: 1;
                         flex-grow: 1;
                         margin-right: 10px;
 
                         .form-control{
                             width: 50vw;
                             height: auto;
+                            transition: all 0.3s ease;
                         }
 
                         .btn{
                             width: 20vw;
                             height: auto;
+                            transition: all 0.3s ease;
                         }
                     }
 
