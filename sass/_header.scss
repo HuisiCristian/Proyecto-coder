@@ -179,12 +179,14 @@ header{
                 }
 
                 .buscador-carrito{
+                    display: flex;
                     margin: 5px;
-                    justify-content: end;
+                    align-items: center;
+                    justify-content: flex-start;
                     gap: 5vw;
 
                     .buscador-mobile{
-                        
+                        flex-grow: 1;
                         margin-right: 10px;
 
                         .form-control{
@@ -199,12 +201,17 @@ header{
                     }
 
                     .carrito{
+                        opacity: 1;
+                        transition: all 0.3s ease;
                         width: auto;
                         margin: 0;
 
                         i{
-                            font-size: 40px;
+                            font-size: 30px;
+                            color: v.$colorPrincipal;
+                            
                         }
+                        
                     }
                 }
                 

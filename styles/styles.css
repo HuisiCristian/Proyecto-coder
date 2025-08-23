@@ -115,11 +115,14 @@ header .navbar .container-fluid .collapse .buscador-carrito .carrito .fa-solid:h
     font-size: 6vw;
   }
   header .container-fluid #navbarMenu .buscador-carrito {
+    display: flex;
     margin: 5px;
-    justify-content: end;
+    align-items: center;
+    justify-content: flex-start;
     gap: 5vw;
   }
   header .container-fluid #navbarMenu .buscador-carrito .buscador-mobile {
+    flex-grow: 1;
     margin-right: 10px;
   }
   header .container-fluid #navbarMenu .buscador-carrito .buscador-mobile .form-control {
@@ -131,11 +134,14 @@ header .navbar .container-fluid .collapse .buscador-carrito .carrito .fa-solid:h
     height: auto;
   }
   header .container-fluid #navbarMenu .buscador-carrito .carrito {
+    opacity: 1;
+    transition: all 0.3s ease;
     width: auto;
     margin: 0;
   }
   header .container-fluid #navbarMenu .buscador-carrito .carrito i {
-    font-size: 40px;
+    font-size: 30px;
+    color: #cf56ff;
   }
 }
 
